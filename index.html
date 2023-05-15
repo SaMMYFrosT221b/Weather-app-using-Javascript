@@ -4,13 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+    </style>
     <title>Document</title>
   </head>
   <body>
-    <py-script>
-      print('Hello, World!') for i in range(100): print(i)
-    </py-script>
+    <div class="home_video">
+      <div class="weather-data">
+        <h1 class="weather-forcast">Weather Forcast</h1>
+        <input type="text" id="search-input" list="search-suggestions" />
+        <datalist id="search-suggestions"></datalist>
+        <button class="search-button" onclick="display_city()">Search</button>
+        <h2 class="city" id="city">City</h2>
+        <h4 class="date" id="date">Date</h4>
+        <div class="weather-logo">
+          <h1>Weather logo</h1>
+          <h1>Temperature</h1>
+        </div>
+      </div>
+      <video src="rocket.mp4"></video>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
