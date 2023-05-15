@@ -8,7 +8,9 @@ searchInput.addEventListener("input", () => {
   // Get the user input
   const input = searchInput.value;
 
-  var sugg = [];
+  var data = getLocationKey(input);
+
+  var sugg = [""];
 
   for (let i = 0; i < data.length; i++) {
     localName = data[i].LocalizedName;
@@ -45,4 +47,25 @@ function display_city() {
   const myDiv = document.getElementById("city");
 
   myDiv.innerText = String(input_value);
+}
+
+function getLocationKey(city) {
+  fetch(
+    `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=hX1bnPZXuV3Pi7AVX6WdmOQ89sWMJrq7&q=${city}`
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      rat(data);
+    })
+    .catch((error) => {
+      // Handle any errors
+      console.log(error);
+      return error;
+    });
+}
+
+getLocationKey("delhi");
+
+function rat(data) {
+  console.log(data);
 }
