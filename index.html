@@ -17,13 +17,19 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="home_video">
+    <div class="home">
       <div class="weather-data">
         <h1 class="weather-forcast">Weather Forcast</h1>
         <input type="text" id="search-input" list="search-suggestions" />
         <datalist id="search-suggestions"></datalist>
-        <button class="search-button" onclick="display_data()">Search</button>
-        <h2 class="city" id="city">City</h2>
+        <button class="search-button" onclick="display_data()">
+          <i class="fa-solid fa-magnifying-glass-location"></i>
+        </button>
+        <div class="location">
+          <i class="fa-solid fa-location-dot"></i>
+          <h2 class="city" id="city">City</h2>
+        </div>
+
         <h4 class="date" id="date">Date</h4>
         <div class="weather-logo">
           <h1>Weather logo</h1>
@@ -33,9 +39,12 @@
           <h1 id="pressure">hello</h1>
         </div>
       </div>
-      <video src="rocket.mp4"></video>
     </div>
     <!-- <script src="script.js"></script> -->
     <!-- <script src="current_condition.js"></script> -->
+    <script
+      src="https://kit.fontawesome.com/bcc6436133.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
