@@ -36,6 +36,8 @@ searchInput.addEventListener("input", () => {
       }
       window.display_data = function () {
         var input_value = document.getElementById("search-input").value;
+        const myDiv = document.getElementById("city");
+        myDiv.innerText = String(input_value);
         location_key = "";
         for (let i = input_value.length - 1; i >= 0; i--) {
           if (input_value[i] != "-") {
@@ -100,8 +102,8 @@ function curent_weather(location_key) {
         data[0].Pressure.Imperial.Value + " " + data[0].Pressure.Imperial.Unit
       );
 
-      // console.log(JSON.stringify(data));
-      // console.log(String(data[0]));
+      console.log(JSON.stringify(data));
+      console.log(String(data[0]));
     })
     .catch((error) => {
       console.log(error);
