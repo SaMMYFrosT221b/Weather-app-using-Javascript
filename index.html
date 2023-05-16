@@ -8,11 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
       rel="stylesheet"
     />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
     </style>
     <title>Document</title>
   </head>
@@ -20,26 +20,35 @@
     <div class="home">
       <div class="weather-data">
         <h1 class="weather-forcast">Weather Forcast</h1>
-        <input type="text" id="search-input" list="search-suggestions" />
+        <input
+          type="text"
+          id="search-input"
+          list="search-suggestions"
+          placeholder="Enter City"
+        />
         <datalist id="search-suggestions"></datalist>
         <button class="search-button" onclick="display_data()">
           <i class="fa-solid fa-magnifying-glass-location"></i>
         </button>
         <div class="location">
-          <i class="fa-solid fa-location-dot"></i>
-          <h2 class="city" id="city">City</h2>
+          <i class="fa-solid fa-location-dot fa-2x" style="margin: 0 10px"></i>
+          <h2 class="city" id="city">Raipur, Chattisgarh, India (IN)</h2>
         </div>
 
-        <h4 class="date" id="date">Date</h4>
-        <div class="weather-logo">
-          <h1>Weather logo</h1>
-          <h1 id="Temperature">Temperature</h1>
-          <h1 id="wind1">Pressure</h1>
-          <h1 id="wind">wind</h1>
-          <h1 id="pressure">hello</h1>
+        <h4 class="date" id="date">16th May 2023 - 13:11</h4>
+        <div class="weather-details">
+          <div class="weather-logo">
+            <!-- <i class="fa-regular fa-snowflake fa-4x"></i> -->
+            <i class="fa-solid fa-cloud-sun-rain fa-4x"></i>
+          </div>
+          <h1 id="Temperature">24.3 C</h1>
+          <h1 id="wind1">25 km/hr</h1>
+          <h1 id="wind">North-East</h1>
+          <h1 id="pressure">75 Pascal</h1>
         </div>
       </div>
     </div>
+    <video src="rain-cup.mp4" autoplay loop></video>
     <!-- <script src="script.js"></script> -->
     <!-- <script src="current_condition.js"></script> -->
     <script

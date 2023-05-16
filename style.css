@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Roboto Condensed', sans-serif;
+    /* color: whitesmoke; */
 }
 .home{
     display: flex;
@@ -10,22 +12,24 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 8rem;
-    border: 2px solid red;
-    padding: 5rem;
+    margin-top: 3rem;
+    /* border: 2px solid red; */
+    padding: 3rem;
 }
 .weather-data{
-    border: 2px solid green;
-    width: 30rem;
+    /* border: 2px solid green; */
+    width: 40rem;
     height: auto;
 }
 
 .weather-forcast{
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 1rem;
+    color: whitesmoke;
 }
 
 #search-input{
+    width: 250px;
     padding: 0.5rem;
     border: 1px solid grey;
     border-top-left-radius: 20px;
@@ -46,5 +50,38 @@
 }
 
 .location{
-    
+    color: whitesmoke;
+    margin: 1.5rem 0 ;
+    display: flex;
+    justify-content: center;
+}
+.date{
+    color: whitesmoke;
+    margin: 10px;
+}
+
+.weather-details{
+    padding: 10px;
+}
+
+.weather-logo{
+    color: whitesmoke;
+    padding: 10px;
+}
+
+#Temperature{
+    color: whitesmoke;
+    font-size: 80px;
+    font-weight: 100;
+}
+#wind1,#wind,#pressure{
+    color: whitesmoke;
+    font-weight: 400;
+}
+
+video{
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
 }
