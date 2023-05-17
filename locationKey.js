@@ -1,4 +1,4 @@
-// var city = "Raipur";
+// This function is used to find the locaiton key of a given city.
 
 function getLocationKey(city) {
   fetch(
@@ -6,10 +6,6 @@ function getLocationKey(city) {
   )
     .then((response) => response.json())
     .then((data) => {
-      // Do something with the response data
-      //   for (let i = 0; i < data.length; i++) {
-      //     console.log(data[i].Key);
-      //   }
       return data;
     })
     .catch((error) => {
